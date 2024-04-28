@@ -5,45 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SunnyBites</title>
     <style>
-        /* CSS styles remain unchanged */
-    </style>
-</head>
-<body>
-    <header>
-        <h1>SunnyBites</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <div class="dishes">
-        <div class="dish">
-            <img src="dish1.jpg" alt="Dish 1">
-            <div class="description">
-                <h2>Dish 1</h2> <!-- Corrected: Changed from h3 to h2 -->
-                <p>Description of Dish 1</p>
-                <p>Price: $10</p>
-            </div>
-        </div>
-        <!-- Add more dishes as needed -->
-    </div>
-    <div class="testimonials">
-        <h2>Customer Testimonials</h2>
-        <div class="testimonial">
-            <img src="testimonial1.jpg" alt="Testimonial 1">
-            <p>"Best dining experience ever!" - John Doe</p>
-        </div>
-        <!-- Add more testimonials as needed -->
-    </div>
-    <footer>
-        <p>&copy; 2023 SunnyBites. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </div>
-    </footer>
-</body>
-</html>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #ffc107;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+        .dishes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .dish {
+            width: 200px;
+            text-align: center;
+            position: relative;
+        }
+        .dish img {
+            width: 100%;
+            height: auto;
+        }
+        .dish:hover .description {
+            display: block;
+        }
+        .description {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .testimonials {
+            background-color: #e9ecef;
+            padding: 20px; text-align: center; } .testimonial { margin-bottom: 20px; } footer { background-color: #ffc107; padding: 20px; text-align: center; } .social-icons { display: flex; justify-content: center; gap: 10px; } .social-icons a { color: #333; text-decoration: none; } </style>
+
+</head> <body> <header> <h1>SunnyBites</h1> <nav> <a href="#">Home</a> <a href="#">Menu</a> <a href="#">About Us</a> <a href="#">Contact</a> </nav> </header> <main> <section class="dishes"> <h2>Our Dishes</h2> <div class="dish"> <img src="dish1.jpg" alt="Dish 1"> <div class="description"> <p>Description of Dish 1</p> <p>Price: $10</p> </div> </div> <!-- Add more dishes as needed --> </section> <section class="testimonials"> <h2>Customer Testimonials</h2> <div class="testimonial"> <img src="testimonial1.jpg" alt="Testimonial 1"> <p>"Best dining experience ever!" - John Doe</p> </div> <!-- Add more testimonials as needed --> </section> </main> <footer> <p>&copy; 2023 SunnyBites. All rights reserved.</p> <div class="social-icons"> <a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">Twitter</a> </div> </footer> </body> </html>
